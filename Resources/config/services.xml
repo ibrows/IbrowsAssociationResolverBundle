@@ -23,9 +23,11 @@
         <service id="ibrows_associationresolver.resolverchain" class="Ibrows\AssociationResolver\Resolver\ResolverChain">
         </service>
 
+        <service id="ibrows_associationresolver.doctrine_annotations.reader" class="Doctrine\Common\Annotations\AnnotationReader" />
+
         <service id="ibrows_associationresolver.annotation.reader" class="Ibrows\AssociationResolver\Reader\AssociationAnnotationReader">
             <call method="setAnnotationReader">
-                <argument type="service" id="annotation_reader" />
+                <argument type="service" id="ibrows_associationresolver.doctrine_annotations.reader" />
             </call>
             <call method="setEntityManager">
                 <argument type="service" id="doctrine.orm.entity_manager" />

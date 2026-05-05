@@ -5,8 +5,8 @@
     "type": "symfony-bundle",
     "license": "MIT",
     "require": {
-        "php": ">=5.3.0",
-        "symfony/framework-bundle": ">=2.1",
+        "php": "^8.1",
+        "symfony/framework-bundle": "^6.4 || ^7.0",
         "ibrows/annotation-reader": "1.*"
     },
     "autoload": {
