@@ -19,7 +19,7 @@ class AnnotationReader implements AnnotationReaderInterface
     /**
      * @inheritdoc
      */
-    public function setAnnotationReader(Reader $annotationReader)
+    public function setAnnotationReader(Reader $annotationReader): static
     {
         $this->annotationReader = $annotationReader;
 

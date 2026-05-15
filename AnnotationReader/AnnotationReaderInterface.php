@@ -16,7 +16,7 @@ interface AnnotationReaderInterface
      * @param Reader $annotationReader
      * @return AnnotationReaderInterface
      */
-    public function setAnnotationReader(Reader $annotationReader);
+    public function setAnnotationReader(Reader $annotationReader): static;
 
     /**
      * @param mixed $entity
