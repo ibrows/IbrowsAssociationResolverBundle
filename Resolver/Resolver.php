@@ -57,7 +57,7 @@ class Resolver implements ResolverInterface
      * @param ResultBag $resultBag
      * @return Resolver
      */
-    public function setResultBag(ResultBag $resultBag = null)
+    public function setResultBag(?ResultBag $resultBag = null)
     {
         $this->resultBag = $resultBag;
 
@@ -93,7 +93,7 @@ class Resolver implements ResolverInterface
      * @param bool $flush
      * @return Resolver
      */
-    public function resolveAssociations($className, OutputInterface $output = null, $flush = false, QueryBuilder $qb = null, $diffMode = false)
+    public function resolveAssociations($className, ?OutputInterface $output = null, $flush = false, ?QueryBuilder $qb = null, $diffMode = false)
     {
         if (null === $output) {
             $output = new NullOutput();

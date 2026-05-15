@@ -27,7 +27,7 @@ interface ResolverInterface
      * @param ResultBag $resultBag
      * @return ResolverInterface
      */
-    public function setResultBag(ResultBag $resultBag = null);
+    public function setResultBag(?ResultBag $resultBag = null);
 
     /**
      * @param ResolverChainInterface $resolverChain
@@ -45,5 +45,5 @@ interface ResolverInterface
      * @param OutputInterface $output
      * @return ResolverInterface
      */
-    public function resolveAssociations($className, OutputInterface $output = null);
+    public function resolveAssociations($className, ?OutputInterface $output = null);
 }
